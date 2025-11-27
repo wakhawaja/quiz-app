@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- DARK MODE TOGGLE -->
+    <div class="theme-switcher">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+      <span class="theme-label">Dark Mode</span>
+    </div>
+
+    <!-- QUIZ APP MAIN CARD -->
+    <div class="app">
+      <h1>Simple Quiz</h1>
+
+      <div class="top-bar">
+        <div id="progress-text">Question 1 of 10</div>
+        <div id="timer">15s</div>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+
+      <div class="quiz">
+        <h2 id="question">Loading...</h2>
+        <div id="answer-buttons" class="answers"></div>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
